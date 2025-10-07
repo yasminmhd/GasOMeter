@@ -1,77 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#FFF176"
-tools:context=".SecondActivity">
-
-<LinearLayout
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="20dp"
-    android:gravity="center_horizontal">
+    android:layout_height="match_parent"
+    android:background="#FFF176"
+    android:fillViewport="true"
+    tools:context=".SecondActivity">
 
-    <!-- Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel Cost Prediction"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_marginBottom="20dp"/>
-
-    <!-- Distance Input -->
-    <EditText
-        android:id="@+id/distanceInput"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter distance (km)"
-        android:inputType="numberDecimal"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="15dp"/>
+        android:padding="20dp"
+        android:gravity="center_horizontal">
 
-    <!-- Fuel Price Input -->
-    <EditText
-        android:id="@+id/fuelPriceInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter fuel price (RM/L)"
-        android:inputType="numberDecimal"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="15dp"/>
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Cost Prediction"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
 
-    <!-- Car Selection -->
-    <Spinner
-        android:id="@+id/carSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
+        <!-- Distance Input -->
+        <EditText
+            android:id="@+id/distanceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter distance (km)"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="15dp"
+            android:padding="12dp" />
 
-    <!-- Calculate Button -->
-    <Button
-        android:id="@+id/calcButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:background="#000000"
-        android:textColor="#FFFFFF"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"/>
+        <!-- Fuel Price Input -->
+        <EditText
+            android:id="@+id/fuelPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter fuel price (RM/L)"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="15dp"
+            android:padding="12dp" />
 
-    <!-- Result Output -->
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:padding="15dp"
-        android:layout_marginTop="20dp"
-        android:background="#FFFFFF" />
+        <!-- Car Selection -->
+        <Spinner
+            android:id="@+id/carSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="Choose a car"
+            android:layout_marginBottom="20dp" />
 
-</LinearLayout>
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000" />
+
+        <!-- Result Output -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
 </ScrollView>
