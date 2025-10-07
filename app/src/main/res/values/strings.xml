@@ -3,4 +3,5 @@
     <string name="vehicle_type_prompt">Choose vehicle type</string>
     <string name="car_prompt">Choose a car</string>
     <string name="calculatebutton">Calculate</string>
+    <string name="tagline">Don\'t guess the gas, just GasOMeter</string>
 </resources>

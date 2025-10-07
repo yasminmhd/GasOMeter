@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.util.HashMap;
+import com.bumptech.glide.Glide;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -31,6 +32,11 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        ImageView gifView = findViewById(R.id.car);
+        Glide.with(this)
+                .asGif()
+                .load(R.drawable.car)
+                .into(gifView);
         Toolbar toolbar = findViewById(R.id.topAppBar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false); // Hide default title
