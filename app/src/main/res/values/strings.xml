@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">GasOMeter</string>
+    <string name="vehicle_type_prompt">Choose vehicle type</string>
+    <string name="car_prompt">Choose a car</string>
+    <string name="calculatebutton">Calculate</string>
 </resources>
